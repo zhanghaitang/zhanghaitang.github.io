@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on 张锐的博客</title>
+    <link>http://zhanghaitang.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on 张锐的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 23 Feb 2021 19:08:44 +0800</lastBuildDate><atom:link href="http://zhanghaitang.github.io/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac上安装redis-cli客户端</title>
+      <link>http://zhanghaitang.github.io/post/Mac%E4%B8%8A%E5%AE%89%E8%A3%85redis-cli%E5%AE%A2%E6%88%B7%E7%AB%AF/</link>
+      <pubDate>Tue, 23 Feb 2021 19:08:44 +0800</pubDate>
+      
+      <guid>http://zhanghaitang.github.io/post/Mac%E4%B8%8A%E5%AE%89%E8%A3%85redis-cli%E5%AE%A2%E6%88%B7%E7%AB%AF/</guid>
+      <description>brew tap ringohub/redis-cli brew update &amp;amp;&amp;amp; brew doctor brew install redis-cli</description>
+    </item>
+    
+  </channel>
+</rss>
