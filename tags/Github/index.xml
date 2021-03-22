@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>工具 on 张锐的博客</title>
-    <link>http://zhanghaitang.github.io/categories/%E5%B7%A5%E5%85%B7/</link>
-    <description>Recent content in 工具 on 张锐的博客</description>
+    <title>Github on 张锐的博客</title>
+    <link>http://zhanghaitang.github.io/tags/Github/</link>
+    <description>Recent content in Github on 张锐的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 22 Mar 2021 17:23:56 +0800</lastBuildDate><atom:link href="http://zhanghaitang.github.io/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Mar 2021 17:23:56 +0800</lastBuildDate><atom:link href="http://zhanghaitang.github.io/tags/Github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Github访问不了</title>
       <link>http://zhanghaitang.github.io/post/Github%E8%AE%BF%E9%97%AE%E4%B8%8D%E4%BA%86/</link>
@@ -14,15 +14,6 @@
       
       <guid>http://zhanghaitang.github.io/post/Github%E8%AE%BF%E9%97%AE%E4%B8%8D%E4%BA%86/</guid>
       <description>设置本地Host https://github.com.ipaddress.com/ https://fastly.net.ipaddress.com/github.global.ssl.fastly.net https://github.com.ipaddress.com/assets-cdn.github.com 配置参考 140.82.113.3 github.com 199.232.69.194 github.global.ssl.fastly.net 185.199.108.153 assets-cdn.github.com 185.199.109.153 assets-cdn.github.com 185.199.110.153 assets-cdn.github.com 185.199.111.153 assets-cdn.github.com</description>
-    </item>
-    
-    <item>
-      <title>Mac上安装redis-cli客户端</title>
-      <link>http://zhanghaitang.github.io/post/Mac%E4%B8%8A%E5%AE%89%E8%A3%85redis-cli%E5%AE%A2%E6%88%B7%E7%AB%AF/</link>
-      <pubDate>Tue, 23 Feb 2021 19:08:44 +0800</pubDate>
-      
-      <guid>http://zhanghaitang.github.io/post/Mac%E4%B8%8A%E5%AE%89%E8%A3%85redis-cli%E5%AE%A2%E6%88%B7%E7%AB%AF/</guid>
-      <description>brew tap ringohub/redis-cli brew update &amp;amp;&amp;amp; brew doctor brew install redis-cli</description>
     </item>
     
   </channel>

@@ -8,12 +8,12 @@
     <language>zh-CN</language>
     <lastBuildDate>Tue, 23 Feb 2021 19:08:44 +0800</lastBuildDate><atom:link href="http://zhanghaitang.github.io/categories/Redis/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Redis API的使用</title>
-      <link>http://zhanghaitang.github.io/post/API%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <title>Redis的数据结构</title>
+      <link>http://zhanghaitang.github.io/post/Redis%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
       <pubDate>Tue, 23 Feb 2021 19:08:44 +0800</pubDate>
       
-      <guid>http://zhanghaitang.github.io/post/API%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-      <description>通用命令 字符串类型 Hash类型 列表类型 集合类型 有序集合类型</description>
+      <guid>http://zhanghaitang.github.io/post/Redis%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+      <description>键值如何存储 Redis使用全局哈希表来保存，key和value的指针，这样就可以在O(1)的时间复杂度查询一个key对应的value 为什么Redis变慢了 当存入key变多，必然会导致Hash冲突，这时候冲突的key会以链表的形式存储，如果链表很长则会影响redis的性能，因为链表</description>
     </item>
     
     <item>
