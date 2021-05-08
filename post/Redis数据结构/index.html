@@ -217,21 +217,21 @@
             <h2 id="键值如何存储">键值如何存储</h2>
 <p>Redis使用全局哈希表来保存，key和value的指针，这样就可以在O(1)的时间复杂度查询一个key对应的value</p>
 <p>
-        <a data-fancybox="gallery" href="https://raw.githubusercontent.com/zhanghaitang/picgo/master/img/1cc8eaed5d1ca4e3cdbaa5a3d48dfb5f.jpeg?token=AKUPMGBYTVVYCCFAWQI4EV3ALBKIK">
-            <img class="mx-auto" alt="" src="https://raw.githubusercontent.com/zhanghaitang/picgo/master/img/1cc8eaed5d1ca4e3cdbaa5a3d48dfb5f.jpeg?token=AKUPMGBYTVVYCCFAWQI4EV3ALBKIK" />
+        <a data-fancybox="gallery" href="https://zhanghaitang-github-io.oss-cn-shanghai.aliyuncs.com/img/1cc8eaed5d1ca4e3cdbaa5a3d48dfb5f.jpeg">
+            <img class="mx-auto" alt="" src="https://zhanghaitang-github-io.oss-cn-shanghai.aliyuncs.com/img/1cc8eaed5d1ca4e3cdbaa5a3d48dfb5f.jpeg" />
         </a>
     </p>
 <h2 id="为什么redis变慢了">为什么Redis变慢了</h2>
 <p>当存入key变多，必然会导致Hash冲突，这时候冲突的key会以链表的形式存储，如果链表很长则会影响redis的性能，因为链表需要顺序扫描。</p>
 <p>
-        <a data-fancybox="gallery" href="https://raw.githubusercontent.com/zhanghaitang/picgo/master/img/8ac4cc6cf94968a502161f85d072e428.jpeg">
-            <img class="mx-auto" alt="" src="https://raw.githubusercontent.com/zhanghaitang/picgo/master/img/8ac4cc6cf94968a502161f85d072e428.jpeg" />
+        <a data-fancybox="gallery" href="https://zhanghaitang-github-io.oss-cn-shanghai.aliyuncs.com/img/8ac4cc6cf94968a502161f85d072e428.jpeg">
+            <img class="mx-auto" alt="" src="https://zhanghaitang-github-io.oss-cn-shanghai.aliyuncs.com/img/8ac4cc6cf94968a502161f85d072e428.jpeg" />
         </a>
     </p>
 <p>Redis采用渐进式的rehash来避免链表过长，Redis会使用两个全局Hash表，一开始默认往hash表1里写数据，随着写入数据的逐步增多redis会创建hash表2（通常hash表2的空间是hash表1的两倍），然后把hash表1的数据拷贝到hash表2。为了避免一次性拷贝产生阻塞，redis采用了渐进式的rehash，当访问到对应的hash桶时候会把对应的桶里数据拷贝。</p>
 <p>
-        <a data-fancybox="gallery" href="https://raw.githubusercontent.com/zhanghaitang/picgo/master/img/73fb212d0b0928d96a0d7d6ayy76da0c.jpeg">
-            <img class="mx-auto" alt="" src="https://raw.githubusercontent.com/zhanghaitang/picgo/master/img/73fb212d0b0928d96a0d7d6ayy76da0c.jpeg" />
+        <a data-fancybox="gallery" href="https://zhanghaitang-github-io.oss-cn-shanghai.aliyuncs.com/img/73fb212d0b0928d96a0d7d6ayy76da0c.jpeg">
+            <img class="mx-auto" alt="" src="https://zhanghaitang-github-io.oss-cn-shanghai.aliyuncs.com/img/73fb212d0b0928d96a0d7d6ayy76da0c.jpeg" />
         </a>
     </p>
 <h2 id="底层的数据结构实现">底层的数据结构实现</h2>
@@ -248,21 +248,21 @@
 <p><strong>压缩列表</strong></p>
 <p>压缩列表对于查找第一个和最后一个元素比较高效，其他元素需要顺序扫描时间复杂度是O(n)</p>
 <p>
-        <a data-fancybox="gallery" href="https://raw.githubusercontent.com/zhanghaitang/picgo/master/img/9587e483f6ea82f560ff10484aaca4a0.jpeg">
-            <img class="mx-auto" alt="" src="https://raw.githubusercontent.com/zhanghaitang/picgo/master/img/9587e483f6ea82f560ff10484aaca4a0.jpeg" />
+        <a data-fancybox="gallery" href="https://zhanghaitang-github-io.oss-cn-shanghai.aliyuncs.com/img/9587e483f6ea82f560ff10484aaca4a0.jpeg">
+            <img class="mx-auto" alt="" src="https://zhanghaitang-github-io.oss-cn-shanghai.aliyuncs.com/img/9587e483f6ea82f560ff10484aaca4a0.jpeg" />
         </a>
     </p>
 <p><strong>跳表</strong></p>
 <p>跳表是在链表的基础上增加了多级索引，这样就不需要遍历整链表，只需要根据多级索引跳到对应位置遍历。</p>
 <p>
-        <a data-fancybox="gallery" href="https://raw.githubusercontent.com/zhanghaitang/picgo/master/img/1eca7135d38de2yy16681c2bbc4f3fb4.jpeg">
-            <img class="mx-auto" alt="" src="https://raw.githubusercontent.com/zhanghaitang/picgo/master/img/1eca7135d38de2yy16681c2bbc4f3fb4.jpeg" />
+        <a data-fancybox="gallery" href="https://zhanghaitang-github-io.oss-cn-shanghai.aliyuncs.com/img/1eca7135d38de2yy16681c2bbc4f3fb4.jpeg">
+            <img class="mx-auto" alt="" src="https://zhanghaitang-github-io.oss-cn-shanghai.aliyuncs.com/img/1eca7135d38de2yy16681c2bbc4f3fb4.jpeg" />
         </a>
     </p>
 <h3 id="redis数据类型与底层数据结构对应关系">Redis数据类型与底层数据结构对应关系</h3>
 <p>
-        <a data-fancybox="gallery" href="https://raw.githubusercontent.com/zhanghaitang/picgo/master/img/8219f7yy651e566d47cc9f661b399f01.jpeg">
-            <img class="mx-auto" alt="" src="https://raw.githubusercontent.com/zhanghaitang/picgo/master/img/8219f7yy651e566d47cc9f661b399f01.jpeg" />
+        <a data-fancybox="gallery" href="https://zhanghaitang-github-io.oss-cn-shanghai.aliyuncs.com/img/8219f7yy651e566d47cc9f661b399f01.jpeg">
+            <img class="mx-auto" alt="" src="https://zhanghaitang-github-io.oss-cn-shanghai.aliyuncs.com/img/8219f7yy651e566d47cc9f661b399f01.jpeg" />
         </a>
     </p>
 
@@ -387,6 +387,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="http://zhanghaitang.github.io/post/Redis%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B/" title="Redis线程模型">Redis线程模型</a>
+    </li>
+    
+    <li>
         <a href="http://zhanghaitang.github.io/post/Github%E8%AE%BF%E9%97%AE%E4%B8%8D%E4%BA%86/" title="Github访问不了">Github访问不了</a>
     </li>
     
@@ -411,7 +415,7 @@
         <h3 class="widget-title"><a href='/categories/'>分类</a></h3>
 <ul class="widget-list">
     
-    <li><a href="http://zhanghaitang.github.io/categories/Redis/">Redis (2)</a></li>
+    <li><a href="http://zhanghaitang.github.io/categories/Redis/">Redis (3)</a></li>
     
     <li><a href="http://zhanghaitang.github.io/categories/%E5%B7%A5%E5%85%B7/">工具 (2)</a></li>
     
@@ -424,7 +428,11 @@
     
     <a href="http://zhanghaitang.github.io/tags/Github/">Github</a>
     
+    <a href="http://zhanghaitang.github.io/tags/IO/">IO</a>
+    
     <a href="http://zhanghaitang.github.io/tags/Redis/">Redis</a>
+    
+    <a href="http://zhanghaitang.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
     
     <a href="http://zhanghaitang.github.io/tags/%E5%B7%A5%E5%85%B7/">工具</a>
     
